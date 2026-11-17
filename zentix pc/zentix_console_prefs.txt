@@ -1,0 +1,3 @@
+Custom Game 1|C:\Games\Game1\game.exe
+Custom Game 2|C:\Games\Game2\game.exe
+Zentix App 3|notepad.exe

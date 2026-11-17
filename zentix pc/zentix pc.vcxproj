@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e05ad77e-bb88-4ad4-830c-09ebc39df0ca}</ProjectGuid>
+    <RootNamespace>zentixpc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\www\ffg\mingw64\include;D:\www\ffg\mingw64\include\gtk-4.0;D:\www\ffg\mingw64\include\pango-1.0;D:\www\ffg\mingw64\include\harfbuzz;D:\www\ffg\mingw64\include\cairo;D:\www\ffg\mingw64\include\gdk-pixbuf-2.0;D:\www\ffg\mingw64\include\glib-2.0;D:\www\ffg\mingw64\lib\glib-2.0\include;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\www\ffg\mingw64\lib</AdditionalLibraryDirectories>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\www\ffg\mingw64\include;D:\www\ffg\mingw64\include\gtk-4.0;D:\www\ffg\mingw64\include\pango-1.0;D:\www\ffg\mingw64\include\harfbuzz;D:\www\ffg\mingw64\include\cairo;D:\www\ffg\mingw64\include\gdk-pixbuf-2.0;D:\www\ffg\mingw64\include\glib-2.0;D:\www\ffg\mingw64\lib\glib-2.0\include;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\www\ffg\mingw64\lib</AdditionalLibraryDirectories>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\vvvvv\MSYS\mingw64\include;D:\vvvvv\MSYS\mingw64\include\gtk-4.0;D:\vvvvv\MSYS\mingw64\include\pango-1.0;D:\vvvvv\MSYS\mingw64\include\harfbuzz;D:\vvvvv\MSYS\mingw64\include\cairo;D:\vvvvv\MSYS\mingw64\include\gdk-pixbuf-2.0;D:\vvvvv\MSYS\mingw64\include\glib-2.0;D:\vvvvv\MSYS\mingw64\lib\glib-2.0\include;D:\vvvvv\MSYS\mingw64\include\graphene-1.0;D:\vvvvv\MSYS\mingw64\include\gstreamer-1.0;D:\vvvvv\MSYS\mingw64\lib\gstreamer-1.0\include;D:\vvvvv\MSYS\mingw64\lib\graphene-1.0\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libgtk-4.dll.a;libgobject-2.0.dll.a;libglib-2.0.dll.a;libgio-2.0.dll.a;Advapi32.lib;libgraphene-1.0.dll.a</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\vvvvv\MSYS\mingw64\lib</AdditionalLibraryDirectories>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\vvvvv\MSYS\mingw64\include;D:\vvvvv\MSYS\mingw64\include\gtk-4.0;D:\vvvvv\MSYS\mingw64\include\pango-1.0;D:\vvvvv\MSYS\mingw64\include\harfbuzz;D:\vvvvv\MSYS\mingw64\include\cairo;D:\vvvvv\MSYS\mingw64\include\gdk-pixbuf-2.0;D:\vvvvv\MSYS\mingw64\include\glib-2.0;D:\vvvvv\MSYS\mingw64\lib\glib-2.0\include;D:\vvvvv\MSYS\mingw64\include\graphene-1.0;D:\vvvvv\MSYS\mingw64\include\gstreamer-1.0;D:\vvvvv\MSYS\mingw64\lib\gstreamer-1.0\include;D:\vvvvv\MSYS\mingw64\lib\graphene-1.0\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\vvvvv\MSYS\mingw64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgtk-4.dll.a;libgobject-2.0.dll.a;libglib-2.0.dll.a;libgio-2.0.dll.a;Advapi32.lib;libgraphene-1.0.dll.a</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FpsAndOther.c" />
+    <ClCompile Include="GameMod.c" />
+    <ClCompile Include="HomeScreen.c" />
+    <ClCompile Include="MainActivity.c" />
+    <ClCompile Include="Settings.c" />
+    <ClCompile Include="SetupWizard.c" />
+    <ClCompile Include="SystemInfoScreen.c" />
+    <ClCompile Include="VideoSplashScreen.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FpsAndOther.h" />
+    <ClInclude Include="GameMod.h" />
+    <ClInclude Include="HomeScreen.h" />
+    <ClInclude Include="localization.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SystemInfoScreen.h" />
+    <ClInclude Include="VideoSplashScreen.h" />
+    <ClInclude Include="ZentixFont.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\x64\Release\setup.nsi" />
+    <None Include="zentix pc.vcxproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="zentix.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="zentix pc/zentix pc.vcxproj" Id="e05ad77e-bb88-4ad4-830c-09ebc39df0ca" />
+</Solution>
